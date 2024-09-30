@@ -11,9 +11,9 @@ BCM learns a single neural network that enables both forward and backward traver
 
 ## Model Weights
 We provide checkpoints for BCM and our reproduced iCT on ImageNet-64:
-- [BCM-ImageNet-64]()
+- [BCM-ImageNet-64](https://figshare.com/ndownloader/articles/27134694/versions/1?folder_path=bcf_imagenet64_no32_qkv_4096)
 - [iCT-ImageNet-64](https://figshare.com/ndownloader/articles/27134694/versions/1?folder_path=ict_imagenet64_no32_qkv_4096)
-- BCM-deep-ImageNet-64
+- [BCM-deep-ImageNet-64](https://figshare.com/ndownloader/articles/27134694/versions/1?folder_path=bcf_imagenet64_no32_qkv_deep_4096)
 - iCT-deep-ImageNet-64
 
 Their FIDs are as follows:
