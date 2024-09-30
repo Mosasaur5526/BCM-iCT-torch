@@ -20,12 +20,12 @@ We provide checkpoints for BCM and our reproduced iCT on ImageNet-64:
 Their FIDs are as follows:
 |   Name   | NFE | FID |
 |:--------:|:---:|:---:|
-|    BCM (deep)            |  1  |  4.18 (3.14)   |
-|                          |  2  |  2.88 (2.45)   |
-|                          |  3  |  2.78 (2.61)   |
-|                          |  4  |  2.68 (2.35)   |
-|   reproduced iCT  (deep) |  1  |  4.60 (3.94)   |
-|                          |  2  |  3.40 (3.14)   |
+|    BCM / BCM-deep           |  1  |  4.18 / 3.14   |
+|                          |  2  |  2.88 / 2.45   |
+|                          |  3  |  2.78 / 2.61   |
+|                          |  4  |  2.68 / 2.35   |
+|   reproduced iCT / iCT-deep|  1  |  4.60 / 3.94  |
+|                          |  2  |  3.40 / 3.14   |
 
 
 ## Dependencies
