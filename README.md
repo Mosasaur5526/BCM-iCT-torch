@@ -61,7 +61,7 @@ As we described in our paper, we found the original iCT suffers from instability
 In our experiments, it diverges after ~620k iterations and the best one-step generation FID we got is ~6.20, largely falling behind the reported 4.02 in the iCT paper.
 We are open to any discussions on solutions to the instability issue and possible ways to reproduce the officially reported results.
 
-We suspect this instability comes from the architecture of ADM. Therefore, as a remedy, we proposed *removing the attention at the resolution of 32* and applying *normalization to QKV matrices*, following EDM2, which we found helpful in improving the performance.
+We suspect this instability comes from the architecture of ADM. Therefore, as a remedy, we proposed *removing the attention at the resolution of 32* and applying *normalization to QKV matrices*, following EDM2. We found this helpful in improving the performance and yielding a one-step FID of 4.60.
 We also apply *early stop* and save the checkpoint with the best one-step generation FID. 
 
 Without modifications to the code, it is expected to start the training scripts with MPI for DDP training. For the commonly used SLURM, we provide the following starting script as an example:
