@@ -74,8 +74,8 @@ srun -p YOUR_SLURM_PARTITION \
 The above script starts an iCT experiment with our architecture modifications, using 8 computing nodes (64 GPUs in total). 
 
 To run the original iCT, please first switch back to the original network architecture. 
-If you have flash-attn==0.2.8 installed, this can be done by simply setting ```attention_type="flash"``` at https://github.com/LOSSResearch/BCM-iCT-torch/blob/main/iCT/cm/unet.py#L282. 
-If not, just keep ```attention_type="default"``` and set ```cosine=False``` at https://github.com/LOSSResearch/BCM-iCT-torch/blob/main/iCT/cm/unet.py#L412.
+If you have flash-attn==0.2.8 installed, this can be done by simply setting ```attention_type="flash"``` at https://github.com/Mosasaur5526/BCM-iCT-torch/blob/main/iCT/cm/unet.py#L282. 
+If not, just keep ```attention_type="default"``` and set ```cosine=False``` at https://github.com/Mosasaur5526/BCM-iCT-torch/blob/main/iCT/cm/unet.py#L412.
 Then run the following script:
 ```
 srun -p YOUR_SLURM_PARTITION \
@@ -120,7 +120,7 @@ We hope our code and observation could help future studies on the influence of n
 
 Since BCM supports very flexible ways of sampling (ancestral, zigzag, mixture; see details in our paper), we think it would be overly verbose and less straightforward to pass arguments to the sampling script.
 Instead, we provide just one simple script (```BCM/scripts/image_sample.py``` or ```iCT/scripts/image_sample.py``` for BCM/iCT), and allow users to modify the code for all sampling methods. 
-We provide detailed examples in the script, around https://github.com/LOSSResearch/BCM-iCT-torch/blob/main/iCT/scripts/image_sample.py#L70 for iCT and around https://github.com/LOSSResearch/BCM-iCT-torch/blob/main/BCM/scripts/image_sample.py#L116 for BCM. 
+We provide detailed examples in the script, around https://github.com/Mosasaur5526/BCM-iCT-torch/blob/main/iCT/scripts/image_sample.py#L70 for iCT and around https://github.com/Mosasaur5526/BCM-iCT-torch/blob/main/BCM/scripts/image_sample.py#L116 for BCM. 
 We believe these examples are simple and straightforward enough as each of them only requires to modify numbers in a few lines.
 
 To do distributed sampling on 4 GPUs (e.g., for iCT), please run:
@@ -139,10 +139,10 @@ In the example script, it loads weights from ```CKPT_DIR/ict_imagenet64_no32_qkv
 Inversion and reconstruction shares the same scripts as sampling. 
 By setting ```--eval_mse=True``` in the sampling script, one can perform inversion and reconstruction for the images in ```--test_data_dir```.
 The per pixel MSE will be calculated automatically at the end and both the original and reconstructed images will be saved.
-Again for conciseness and clarity, we refer users to https://github.com/LOSSResearch/BCM-iCT-torch/blob/main/BCM/scripts/image_sample.py#L172 to modify the code to enable one/multi-step inversion.
+Again for conciseness and clarity, we refer users to https://github.com/Mosasaur5526/BCM-iCT-torch/blob/main/BCM/scripts/image_sample.py#L172 to modify the code to enable one/multi-step inversion.
 
 Note that the ImageNet validation set is not structured by categories as the training set, so we modify the ```load_data``` function in ```cm/image_datasets.py ``` to support loading both images and labels from the valiadtion set.
-For convenience, the labels could be found in ```datasets/imagenet_val_label.txt``` and specified at https://github.com/LOSSResearch/BCM-iCT-torch/blob/main/BCM/cm/image_datasets.py#L52; one may also load the image-label pairs in their customized ways by rewriting the loading function.
+For convenience, the labels could be found in ```datasets/imagenet_val_label.txt``` and specified at https://github.com/Mosasaur5526/BCM-iCT-torch/blob/main/BCM/cm/image_datasets.py#L52; one may also load the image-label pairs in their customized ways by rewriting the loading function.
 Please notice the labels are important as they will be sent into the model as conditions during inversion and reconstruction.
 
 
