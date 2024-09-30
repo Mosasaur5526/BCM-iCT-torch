@@ -1,7 +1,7 @@
 # Bidirectional Consistency Models (PyTorch)
 This repo contains:
-- official PyTorch code and model weights of [Bidirectional Consistency Models (BCM)](https://arxiv.org/abs/2403.18035) on ImageNet-64.
-- PyTorch code and model weights of our reproduced [Improved Consistency Training (iCT)](https://arxiv.org/abs/2310.14189) on ImageNet-64.
+- official PyTorch **code** and model **weights** of [Bidirectional Consistency Models (BCM)](https://arxiv.org/abs/2403.18035) on ImageNet-64.
+- PyTorch **code** and model **weights** of our reproduced [Improved Consistency Training (iCT)](https://arxiv.org/abs/2310.14189) on ImageNet-64.
 
 BCM learns a single neural network that enables both forward and backward traversal along the PF ODE, efficiently unifying generation and inversion tasks within one framework. Our repository is based on [openai/consistency_models](https://github.com/openai/consistency_models), which was initially released under the MIT license.
 
