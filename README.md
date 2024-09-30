@@ -91,7 +91,7 @@ srun -p YOUR_SLURM_PARTITION \
 ### BCM Funetuning
 
 The code for BCM is located in the ```BCM``` folder.
-For ImageNet-64, we finetune BCM from pretrained iCT model to increase scalability, so please specify the location of the pretrained checkpoint in BCM/scripts/bcf_imagenet64_no32_qkv_4096.sh.
+For ImageNet-64, we finetune BCM from pretrained iCT model to increase scalability, so please specify the location of the pretrained checkpoint in ```BCM/scripts/bcf_imagenet64_no32_qkv_4096.sh```.
 We carefully initialize the model to ensure that newly added ```t_end``` will not influence the iCT prediction. Please find the details in our paper.
 
 To perform BCF with, e.g., 64 GPUs, please run the following script:
