@@ -1,5 +1,6 @@
 # Bidirectional Consistency Models (PyTorch)
 [![](http://img.shields.io/badge/cs.LG-arXiv%3A2403.18035-B31B1B.svg)](https://arxiv.org/abs/2403.18035)
+
 This repo contains:
 - official PyTorch **code** and model **weights** of [Bidirectional Consistency Models (BCM)](https://arxiv.org/abs/2403.18035) on ImageNet-64.
 - PyTorch **code** and model **weights** of our reproduced [Improved Consistency Training (iCT)](https://arxiv.org/abs/2310.14189) on ImageNet-64.
