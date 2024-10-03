@@ -1,5 +1,7 @@
 # Bidirectional Consistency Models (PyTorch)
-## Official code and model checkpoints
+=
+Official code and model checkpoints
+-
 [![](http://img.shields.io/badge/arXiv-2403.18035-B31B1B.svg)](https://arxiv.org/abs/2403.18035)
 
 This repo contains:
