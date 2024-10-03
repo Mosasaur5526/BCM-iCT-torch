@@ -1,4 +1,4 @@
-# Bidirectional Consistency Models (PyTorch)
+Bidirectional Consistency Models (PyTorch)
 =
 Official code and model checkpoints
 -
