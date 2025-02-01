@@ -8,7 +8,7 @@ This repo contains:
 
 BCM learns a single neural network that enables both forward and backward traversal along the PF ODE, efficiently unifying generation and inversion tasks within one framework. Our repository is based on [openai/consistency_models](https://github.com/openai/consistency_models), which was initially released under the MIT license.
 
-We will also provide our code for BCM and iCT on CIFAR-10 with JAX. Please stay tuned for updates!
+
 
 ## TL;DR
 BCM learns a single neural network that enables both forward and backward traversal along the PF ODE, efficiently unifying generation and inversion tasks within one framework. BCM offers diverse sampling options and has great potential in downstream tasks.
