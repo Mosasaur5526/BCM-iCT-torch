@@ -55,7 +55,6 @@ conda install -c conda-forge mpi4py=3.1.4 mpich=3.2.3
 
 As we described in our paper, for complex dataset like ImageNet-64, we propose to finetune BCM from pretrained iCT model.
 We, therefore, first provide code for iCT and then for BCM Finetuning.
-Regarding the code to train BCM from scratch, please check out our JAX implementation on CIFAR-10.
 
 
 ### iCT 
@@ -112,7 +111,7 @@ srun -p YOUR_SLURM_PARTITION \
     sh WORKSPACE_DIR/BCM/scripts/bcf_imagenet64_no32_qkv_4096.sh
 ```
 
-Regarding the code to train BCM from scratch, please check out our JAX implementation on CIFAR-10.
+
 
 
 ### FP32 Training
